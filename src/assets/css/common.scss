@@ -1,0 +1,84 @@
+/*css hack*/
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, form, button, input, textarea, th, td {
+    margin: 0;
+    padding: 0;
+}
+ul, ol, dl {
+    list-style: outside none none;
+}
+i{font-style:normal;}
+i, cite, em, var, address, dfn {
+    font-style: italic;
+}
+a{
+    color: #333;
+    cursor: pointer;
+    font-family: "Microsoft YaHei", MingLiu, STHeiti, serif;
+    outline: medium none;
+    text-decoration: none;
+}
+
+body{
+    background: #f1f5f8;
+    user-select: none;
+}
+.ico {
+    background-image: url(../../../public/img/login/jl.png);
+}
+
+.l{
+    float: left;
+}
+.r{
+    float: right;
+}
+.w{
+    margin:0 auto;
+    position:relative;
+    width: 1200px !important;
+}
+input::-webkit-input-placeholder {
+    /* placeholder颜色  */
+    color: #aab2bd;
+    /* placeholder字体大小  */
+   /*font-size: 12px;*/
+    /* placeholder位置  */
+    /*text-align: center;*/
+}
+input{
+    color:#f99056 !important;
+}
+/*::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    /*color:    #909;
+/*}*/
+/*:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  /* color:    #909;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  /* color:    #909;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   /*color:    #909;
+/*}*/
+/*iconfont*/
+@font-face {
+    font-family: 'iconfont';  /* project id 1352350 */
+    src: url('//at.alicdn.com/t/font_1352350_34ztasg99e9.eot');
+    src: url('//at.alicdn.com/t/font_1352350_34ztasg99e9.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_1352350_34ztasg99e9.woff2') format('woff2'),
+    url('//at.alicdn.com/t/font_1352350_34ztasg99e9.woff') format('woff'),
+    url('//at.alicdn.com/t/font_1352350_34ztasg99e9.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_1352350_34ztasg99e9.svg#iconfont') format('svg');
+  }
+    .iconfont {
+        font-family: "iconfont" !important;
+        font-size: 16px;
+        font-style: normal;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    
+
+
+
+
