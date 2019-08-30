@@ -1,6 +1,8 @@
 <template>
 <div class="index">
+    <banner></banner>
             <!--；轮播图-->
+            
             <div class="banner w" id="ban">
                 <img class="banner-tu" src="../../public/img/index/lbt1.jpg" alt=""/>
                 <img class="banner-tu" src="../../public/img/index/lbt2.jpg" alt=""/>
@@ -63,11 +65,11 @@
                                 <div class="qs-cc-tt">
                                         <span class="cc-tubiao ico">{{item.tic_zk}}折</span>
                                         <span class="haibao">
-                                            <a href="yc_details/tic_id"></a>
+                                            <router-link to="`/yc_details/${tic_id}`">
                                             <img :src="item.tic_pic" alt="" class="haibao-img"/>
-                                            </a>
+                                            </router-link>
+                                           
                                         </span>
-            
                                         <ul class="ico haibao-xx">
                                             <li><i></i>{{item.tic_venue}}</li>
                                             <li><i></i>{{item.tic_time}}</li>
@@ -98,8 +100,8 @@
                             <div class="qs-cc" v-for="(item,key) of indexinfos[1]" :key="key">
                                             <div class="qs-cc-tt">                    
                                                 <span class="haibao">
-                                                <router-link to="/yc_details/item.tic_id"></router-link>
-                                                    <img :src="item.tic_pic" class="haibao-img"/>
+                                                <a href="/yc_details/${item.tic_id}">
+                                                    <img :src="item.tic_pic" class="haibao-img"/></a>
                                                 
                                                 </span>
                                                 <ul class="ico haibao-xx">
@@ -218,8 +220,8 @@
                             <div class="qs-cc" v-for="(item,key) of indexinfos[2]" :key="key">
                                             <div class="qs-cc-tt">                    
                                                 <span class="haibao">
-                                                <router-link to="/yc_details/item.tic_id"></router-link>
-                                                    <img :src="item.tic_pic" class="haibao-img"/>
+                                                <router-link :to="`yc_details/${item.tic_id}`">
+                                                    <img :src="item.tic_pic" class="haibao-img"/></router-link>
                                                 
                                                 </span>
                                                 <ul class="ico haibao-xx">
@@ -254,8 +256,8 @@
                             <div class="qs-cc" v-for="(item,key) of indexinfos[3]" :key="key">
                                             <div class="qs-cc-tt">                    
                                                 <span class="haibao">
-                                                <router-link to="/yc_details/item.tic_id"></router-link>
-                                                    <img :src="item.tic_pic" class="haibao-img"/>
+                                                <router-link :to="`yc_details/${item.tic_id}`">
+                                                    <img :src="item.tic_pic" class="haibao-img"/></router-link>
                                                 
                                                 </span>
                                                 <ul class="ico haibao-xx">
@@ -293,8 +295,8 @@
                             <div class="qs-cc" v-for="(item,key) of indexinfos[4]" :key="key">
                                             <div class="qs-cc-tt">                    
                                                 <span class="haibao">
-                                                <router-link to="/yc_details/item.tic_id"></router-link>
-                                                    <img :src="item.tic_pic" class="haibao-img"/>
+                                                <router-link :to="`yc_details/${item.tic_id}`">
+                                                    <img :src="item.tic_pic" class="haibao-img"/></router-link>
                                                 
                                                 </span>
                                                 <ul class="ico haibao-xx">
@@ -331,8 +333,8 @@
                             <div class="qs-cc" v-for="(item,key) of indexinfos[5]" :key="key">
                                             <div class="qs-cc-tt">                    
                                                 <span class="haibao">
-                                                <router-link to="/yc_details/item.tic_id"></router-link>
-                                                    <img :src="item.tic_pic" class="haibao-img"/>
+                                                <router-link :to="`yc_details/${item.tic_id}`">
+                                                    <img :src="item.tic_pic" class="haibao-img"/></router-link>
                                                 
                                                 </span>
                                                 <ul class="ico haibao-xx">
@@ -367,8 +369,8 @@
                             <div class="qs-cc" v-for="(item,key) of indexinfos[6]" :key="key">
                                             <div class="qs-cc-tt">                    
                                                 <span class="haibao">
-                                                <router-link to="/yc_details/item.tic_id"></router-link>
-                                                    <img :src="item.tic_pic" class="haibao-img"/>
+                                                <router-link :to="`yc_details/${item.tic_id}`">
+                                                    <img :src="item.tic_pic" class="haibao-img"/></router-link>
                                                 
                                                 </span>
                                                 <ul class="ico haibao-xx">
@@ -394,8 +396,10 @@
 </div>
 </template>
 <script>
+import Banner from '../components/banner/banner';
 export default {
-  data(){
+    inject:['reload'],
+    data(){
     return {
         styles:[0,1,2,3,4,5,6],
         indexinfos:[]
@@ -403,6 +407,7 @@ export default {
   },
   props:[],
   methods:{
+   
       load(style){
           this.axios.get(
       `/ticket/select/${style}`
@@ -422,7 +427,8 @@ export default {
             console.log(this.indexinfos);       
         }    
 
-    )},
+    );
+    },
     selectTickets(itic_family_id,recommended){
         this.axios.get(
                 `/ticket/selectByid/${itic_family_id}`
@@ -444,8 +450,9 @@ export default {
       this.load(4);
       this.load(5);
       this.load(6);
-      
-     
+  },
+  components:{
+      banner:Banner
   }
 }
 </script>
