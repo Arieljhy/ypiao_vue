@@ -1,5 +1,6 @@
 <template>
 <div class="index">
+    <my-header></my-header>
     <banner></banner>
             <!--；轮播图-->
             
