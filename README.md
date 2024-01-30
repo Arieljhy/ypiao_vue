@@ -1,4 +1,4 @@
-## Ai-Docs-Bot
+# Ai-Docs-Bot
 
 ### 介绍
 智能客服SDK ，一款支持多种形式的答案展示，包括文字、列表和链接等，以便开发者能够更直观地获取所需的信息的智能问答工具插件。
@@ -7,49 +7,48 @@
 ### 相关技术
 
 - Vue3 + TypeScript + Pinia + Vite 
-
 - 组件库： Ant Design Vue 
-
 - 推荐node版本：v20.9.0
 
-### 开发准备工作
+## 准备工作
 
-#### 克隆代码库到本地
-- 点击右上角 “克隆代码库” 按钮，用 HTTPS 或者 SSH 方式，克隆代码库到本地
-- 注意：克隆代码库到本地之后，安装hook（在本地项目终端中 执行安装命令）
-#### 安装 VSCode 插件
+### 安装 VSCode 插件
 + [VSCode](https://code.visualstudio.com/) 
 + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur)
 + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
 
-#### 安装依赖
+### 克隆代码库到本地
+- 点击右上角 “克隆代码库” 按钮，用 HTTPS 或者 SSH 方式，克隆代码库到本地
+  注意：克隆代码库到本地之后，安装hook（在本地项目终端中 执行安装命令）
+
+### 安装依赖
 
 ```sh
 npm config set registry http://registry.npm.baidu-int.com
 npm install
 ```
 
-### 开发和调试
+## 开发和调试
 
-#### 本地开发：
+### 本地开发：
 
 ```sh
 npm run dev
 ```
 
-#### 构建产物：
+### 构建产物：
 
 ```sh
 npm run build
 ```
 
-#### Eslint：
+### Eslint：
 
 ```sh
 npm run lint
 ```
 
-#### StyleLint
+### StyleLint
 ```sh
 npm run lint:style
 ```
