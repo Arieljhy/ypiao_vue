@@ -13,13 +13,9 @@
 - 推荐node版本：v20.9.0
 
 ## 开发准备工作
-
-- ** clone到本地 **
-
-```text
+ ### clone到本地 
     点击右上角 “克隆代码库” 按钮，可使用 HTTPS 方式，也可以使用 SSH 方式， 进行clone操作。
     克隆完需要安装hook: 在本地项目终端中 输入命令安装 hook
-```
 ### 安装 VSCode 插件
 + [VSCode](https://code.visualstudio.com/) 
 + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur)
