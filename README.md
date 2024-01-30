@@ -56,7 +56,7 @@ npm run lint
 npm run lint:style
 ```
 
-### 文件资源目录 📚
+### 文件资源目录
 
 ```text
 AI-DOCS-BOT
@@ -106,7 +106,7 @@ AI-DOCS-BOT
 
 ```
 
-### 开发 & 调试 & 部署 & 上线 指引 文档 👀
+### 开发 & 调试 & 部署 & 上线 指引 文档
 
 - 文档链接：https://ku.baidu-int.com/knowledge/HFVrC7hq1Q/xjYiDpu--c/5mAiFsK5ix/AlkuDr-AovAjxr
 - 文档中包含 **前置准备（相关文档、部署环境等）、开发流程（提测流程等）、调试联调 、部署上线流程** 的相关介绍, 可根据文档进行开发。 
