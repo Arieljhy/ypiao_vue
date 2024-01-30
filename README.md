@@ -74,7 +74,7 @@ AI-DOCS-BOT
 │  ├─ typings             # 全局样式文件
 │  ├─ utils               # 常用工具库
 │  ├─ App.vue             # 项目主组件
-│  └─ main.ts            # 项目入口文件
+│  └─ main.ts             # 项目入口文件
 │  
 ├─ test                   # 测试文件
 ├─ .eslintignore          # 忽略 Eslint 校验
@@ -84,17 +84,16 @@ AI-DOCS-BOT
 ├─ .npmrc                 # npm 配置文件
 ├─ .stylelintignore       # 忽略 stylelint 格式化
 ├─ .stylelintrc.cjs       # stylelint 样式格式化配置
-├─ build.sh               # 
+├─ build.sh               # 自动化构建项目脚本文件
 ├─ ci.yml                 # 解决build语法错误
-├─ components.d.ts        # 
+├─ components.d.ts        # 声明在项目中使用的组件的ts类型
 ├─ .prettierignore        # 忽略 Prettier 格式化
 ├─ .prettierrc.cjs        # Prettier 格式化配置
 ├─ env.d.ts               # 全局环境变量的类型声明
 ├─ index.html             # 入口 html
-├─ LICENSE                # 开源协议文件
 ├─ package-lock.json      # 依赖包包版本锁
 ├─ package.json           # 依赖包管理
-├─ playground.html        # 
+├─ playground.html         
 ├─ playwright.config.ts   # Playwright 测试框架配置文件
 ├─ postcss.config.js      # postcss 配置
 ├─ README.md              # README 介绍
