@@ -7,7 +7,7 @@
 ### 相关技术
 
 - Vue3 + TypeScript + Pinia + Vite 
-- 组件库： Ant Design Vue 
+- 组件库：Ant Design Vue 
 - 推荐node版本：v20.9.0
 
 ## 准备工作
@@ -19,7 +19,10 @@
 
 ### 克隆代码库到本地
 - 点击右上角 “克隆代码库” 按钮，用 HTTPS 或者 SSH 方式，克隆代码库到本地
-- 注意：克隆代码库到本地之后，安装hook（在本地项目终端中 执行安装命令）
+- 克隆代码库到本地之后，安装hook，在本地项目终端中执行命令
+```sh
+curl -s http://icode.baidu.com/tools/hooks/commit-msg > $(git rev-parse --git-dir)/hooks/commit-msg && chmod u+x $(git rev-parse --git-dir)/hooks/commit-msg
+```
 
 ### 安装依赖
 
